@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+class CSVParser
+class TableBuild
+
+App o-- CSVParser
+App o-- TableBuild
+
+class CSVParser {
+String path
+parsed()
+}
+
+class TableBuild {
+List<Map<String, String>> in
+String output
+build()
+getRow()
+}
+
+class App {
+String path
+CSVParser input
+TableBuild output
+}
+
+@enduml

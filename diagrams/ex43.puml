@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+class CreateFiles
+class CreateDirectory
+
+App o-- CreateFiles
+App o-- CreateDirectory
+
+class CreateFiles {
+String siteName
+String author
+String js
+String css
+String root
+build()
+}
+
+class CreateDirectory {
+String root
+StringBuilder dir
+buildDir()
+}
+
+class App {
+String siteName
+String author
+String js
+String css
+String root
+CreateFiles cFiles
+CreateDirectory dir
+}
+
+@enduml

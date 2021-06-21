@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+class TextFileInput
+
+App o-- TextFileInput
+
+class TextFileInput {
+String filePath
+ArrayList<String> contents
+String output
+getFilePath()
+setFilePath()
+getContents()
+setContents()
+getOutput()
+setOutput()
+readFile()
+replaceWord()
+buildOutput()
+}
+
+
+class App {
+String inputFile
+String fileName
+TextFileInput input
+String replaceVictim
+String replaceVictor
+fixFileName()
+WriteFile()
+}
+
+@enduml

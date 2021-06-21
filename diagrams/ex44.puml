@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+class Products
+
+App o-- Products
+
+class Products {
+String name
+double price
+int quantity
+getName()
+setName()
+getPrice()
+setPrice()
+getQuantity()
+setQuantity()
+}
+
+
+class App {
+String inputPath
+String output
+getProducts()
+searchForProduct()
+search()
+}
+
+@enduml

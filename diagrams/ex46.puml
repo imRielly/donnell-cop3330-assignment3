@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App
+
+class App {
+String path
+ArrayList<String> words
+Map<String, Integer> counts
+String output
+readFile()
+populateCounts()
+displayCounts()
+}
+
+@enduml
